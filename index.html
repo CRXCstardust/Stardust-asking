@@ -25,7 +25,15 @@
         async
         src="https://tenor.com/embed.js"
       ></script>
-      <h1>DO you love me? 🤗</h1>
+      <h1>DO wanna be my bestfriend me <span class="dynamicWord"></span>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".dynamicWord").forEach(el => {
+            el.textContent = new URLSearchParams(window.location.search).get("word") || "!";
+        });
+    });
+</script>? 🤗</h1>
       <p>~𝑺𝑻𝑨𝑹𝑫𝑼𝑺𝑻 is all yours</p>
 
       <div class="btn">
